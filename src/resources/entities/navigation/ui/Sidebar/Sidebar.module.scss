@@ -1,0 +1,14 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: toRem(20);
+    height: 100vh;
+    border-radius: $radiusRound;
+    width: 100px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    gap: toRem(10);
+    padding: toRem(20);
+    box-sizing: border-box;
+}

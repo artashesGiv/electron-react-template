@@ -1,6 +1,10 @@
 import { createRoot } from 'react-dom/client'
-import { App } from './resources/app'
+import { App } from './resources/app/App'
+import { BrowserRouter } from 'react-router-dom'
 
 const container = document.getElementById('app')
-const root = createRoot(container)
-root.render(<App/>)
+createRoot(container).render(
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>,
+)

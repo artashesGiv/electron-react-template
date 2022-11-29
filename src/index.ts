@@ -11,7 +11,7 @@ const createWindow = async (): Promise<void> => {
     const mainWindow = new BrowserWindow({
         height: 700,
         width: 1400,
-        title: 'qwerty',
+        title: 'App',
         minWidth: 500,
         minHeight: 500,
         webPreferences: {
