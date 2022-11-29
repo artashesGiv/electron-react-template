@@ -1,0 +1,108 @@
+body,
+button,
+input,
+textarea,
+.button {
+    font-family: $fontFamily;
+}
+
+body {
+    font-size: 14px;
+    color: var(--textBase);
+    background-color: var(--backgroundBase);
+    backface-visibility: hidden;
+    text-rendering: optimizelegibility;
+    //min-width: 1200px;
+}
+
+html {
+    font-size: 12px;
+
+    @media (min-width: $desktop) {
+        font-size: 1vw;
+    }
+
+    @media (min-width: $maxRems) {
+        font-size: 18px;
+    }
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+
+    @include container-padding;
+
+    @include media-desktop {
+        max-width: $containerMaxWidth;
+    }
+}
+
+main {
+    display: block;
+}
+
+.button,
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    backface-visibility: hidden;
+    text-align: center;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea {
+    appearance: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    &::placeholder {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+    }
+
+    &:-webkit-autofill {
+        background-clip: text;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+[data-src] {
+    transition: opacity 0.3s ease;
+}
+
+.lazyload {
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.lazyloaded {
+    opacity: 1;
+}
+
+//@include newFont(icon, 'icons/iconfont', 400);

@@ -1,0 +1,7 @@
+@import "./styles";
+
+.app {
+    &__div {
+        border: 1px solid red;
+    }
+}

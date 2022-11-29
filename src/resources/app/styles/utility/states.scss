@@ -1,0 +1,35 @@
+
+.is {
+    &-disabled {
+        pointer-events: none;
+        user-select: none;
+    }
+
+    &-bold {
+        font-weight: 600;
+    }
+
+    &-view {
+        &-brand {
+            color: var(--textBrand);
+        }
+
+        &-warning {
+            color: var(--textWarning);
+        }
+
+        &-critical {
+            color: var(--textCritical);
+        }
+
+        &-success {
+            color: var(--textSuccess);
+        }
+
+        &-secondary {
+            color: var(--textSecondary);
+        }
+    }
+}
+
+
